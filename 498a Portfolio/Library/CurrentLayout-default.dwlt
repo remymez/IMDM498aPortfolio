@@ -8,7 +8,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: 
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -73,7 +73,8 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LoadedToolbars: []
+  m_LoadedToolbars:
+  - {fileID: 20}
   m_MainToolbar: {fileID: 20}
   m_LastLoadedLayoutName: 
 --- !u!114 &4
@@ -118,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 76
+  controlID: 132
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 86
+  controlID: 58
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,11 +168,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1531
-    height: 599
+    height: 559
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 87
+  controlID: 59
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,12 +191,12 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 379
-    height: 599
+    height: 559
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
@@ -208,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -216,16 +217,16 @@ MonoBehaviour:
     x: 379
     y: 0
     width: 1152
-    height: 599
+    height: 559
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 12}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 13}
+  - {fileID: 12}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -242,9 +243,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 599
+    y: 559
     width: 1531
-    height: 388
+    height: 428
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 16}
@@ -264,7 +265,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -288,6 +289,84 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 379
+    y: 73
+    width: 1150
+    height: 538
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -7191031751256340359, guid: 56ee0da317d9bca4cbf42e34845dd9d5, type: 2}
+    - {fileID: 4133785437789218875, guid: e4862f79574036e4d96ce4bfee2443bb, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.7225
+      e01: 0
+      e02: 0
+      e03: -25.630056
+      e10: 0
+      e11: 0.7225
+      e12: 0
+      e13: 56.04498
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.98065275
+      e01: 0
+      e02: 0
+      e03: -58.917274
+      e10: 0
+      e11: 0.98065275
+      e12: 0
+      e13: 13.973632
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: e4862f79574036e4d96ce4bfee2443bb, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 4133785437789218875, guid: e4862f79574036e4d96ce4bfee2443bb, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 1
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -303,7 +382,7 @@ MonoBehaviour:
     x: 379
     y: 73
     width: 1150
-    height: 578
+    height: 538
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -311,11 +390,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1150, y: 557}
+  m_TargetSize: {x: 1150, y: 517}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -328,8 +407,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -575
     m_HBaseRangeMax: 575
-    m_VBaseRangeMin: -278.5
-    m_VBaseRangeMax: 278.5
+    m_VBaseRangeMin: -269
+    m_VBaseRangeMax: 269
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -338,7 +417,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -346,11 +425,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 1150
-      height: 557
+      height: 538
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 575, y: 278.5}
+    m_Translation: {x: 575, y: 269}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -358,18 +437,18 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -575
-      y: -278.5
+      y: -269
       width: 1150
-      height: 557
+      height: 538
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1150, y: 578}
+  m_LastWindowPixelSize: {x: 1150, y: 538}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,14 +471,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 378
-    height: 578
+    height: 538
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8efaffff
+      m_ExpandedIDs: 52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -423,7 +502,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 51acd4fbccdbee24fb053cd91a969c60
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -443,10 +522,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 505
+    x: 379
     y: 73
-    width: 1535
-    height: 797
+    width: 1150
+    height: 538
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 88d0e89d7c640bf469d9ac13509ddebd
@@ -459,9 +538,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -0.37629196, y: -0.80217624, z: -2.9746356}
     speed: 2
-    m_Value: {x: -10.211889, y: -1.5986996, z: -0.2614174}
+    m_Value: {x: -0.37629196, y: -0.80217624, z: -2.9746356}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -508,19 +587,19 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: -0.008573179, y: 0.9853288, z: -0.16254643, w: -0.051769752}
     speed: 2
-    m_Value: {x: -0.25069878, y: 0.57616043, z: -0.19157319, w: -0.7539821}
+    m_Value: {x: -0.008573179, y: 0.9853288, z: -0.16254643, w: -0.051769752}
   m_Size:
-    m_Target: 10
+    m_Target: 4.243316
     speed: 2
-    m_Value: 6.587873
+    m_Value: 4.243316
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
+    m_Speed: 1.005
     m_SpeedNormalized: 0.49999997
     m_SpeedMin: 0.01
     m_SpeedMax: 2
@@ -539,31 +618,6 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
-  m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 468
-    y: 181
-    width: 973
-    height: 501
-  m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -585,9 +639,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 672
+    y: 632
     width: 1530
-    height: 367
+    height: 407
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -602,22 +656,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 96
   m_LastFolders:
-  - Assets
-  m_LastFoldersGridSize: -1
+  - Assets/Prefabs
+  m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Remy\Documents\Spring 2021\IMDM498a\Portfolio\498a Portfolio
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3a440000
-    m_LastClickedID: 17466
-    m_ExpandedIDs: 000000003a440000
+    m_SelectedIDs: 06420000
+    m_LastClickedID: 16902
+    m_ExpandedIDs: 00000000d8410000da410000dc410000de410000e0410000e2410000e4410000e6410000e8410000ea410000ec410000ee410000f0410000f2410000f4410000f6410000f8410000fa41000004420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,7 +699,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000d8410000da410000dc410000de410000e0410000e2410000e4410000e6410000e8410000ea410000ec410000ee410000f0410000f2410000f4410000f6410000f8410000fa410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -698,9 +752,9 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 115
+  m_DirectoriesAreaWidth: 253
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -722,9 +776,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 891
-    width: 2041
-    height: 508
+    y: 632
+    width: 1530
+    height: 407
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 MonoBehaviour:
@@ -747,17 +801,17 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 673
+    y: 632
     width: 1530
-    height: 366
+    height: 407
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 1021
+    ID: 4814
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 222
-    - 74
+    - 253
+    - 84
     relativeSizes:
     - 0.75
     - 0.25
@@ -767,7 +821,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 296
+    lastTotalSize: 337
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -815,12 +869,12 @@ MonoBehaviour:
     m_Window: {fileID: 18}
     newResultList:
     - id: 1000
-      uniqueId: '[PipeTaskAssets][suite]'
-      name: PipeTaskAssets
-      fullName: PipeTaskAssets
-      resultStatus: 2
-      duration: 0.1381422
-      messages: One or more child tests had errors
+      uniqueId: '[498a Portfolio][suite]'
+      name: 498a Portfolio
+      fullName: 498a Portfolio
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -830,286 +884,6 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1015
-      uniqueId: '[Assembly-CSharp-Editor][D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-      name: Assembly-CSharp-Editor.dll
-      fullName: D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-      resultStatus: 2
-      duration: 0.1075217
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[PipeTaskAssets][suite]'
-    - id: 1001
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CapControlTest][suite]
-      name: CapControlTest
-      fullName: CapControlTest
-      resultStatus: 1
-      duration: 0.0143139
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1015
-      parentUniqueId: '[Assembly-CSharp-Editor][D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-    - id: 1002
-      uniqueId: Assembly-CSharp-Editor.dll/CapControlTest/[Assembly-CSharp-Editor][CapControlTest.CapControl_Test]
-      name: CapControl_Test
-      fullName: CapControlTest.CapControl_Test
-      resultStatus: 1
-      duration: 0.0012972
-      messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CapControlTest][suite]
-    - id: 1003
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][LightTriggerTest][suite]
-      name: LightTriggerTest
-      fullName: LightTriggerTest
-      resultStatus: 2
-      duration: 0.0238862
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1015
-      parentUniqueId: '[Assembly-CSharp-Editor][D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-    - id: 1004
-      uniqueId: Assembly-CSharp-Editor.dll/LightTriggerTest/[Assembly-CSharp-Editor][LightTriggerTest.LightTriggerTest_Test]
-      name: LightTriggerTest_Test
-      fullName: LightTriggerTest.LightTriggerTest_Test
-      resultStatus: 2
-      duration: 0.0009864
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at LightTrigger.OnTriggerEnter (UnityEngine.Collider other)
-        [0x00016] in D:\\Remy\\Documents\\Spring 2021\\CMSC435\\vlearn2\\Webapp\\branches\\api\\unity\\PipeTaskAssets\\Assets\\Code\\LightTrigger.cs:15
-        \r\n  at LightTriggerTest.LightTriggerTest_Test () [0x0002d] in D:\\Remy\\Documents\\Spring
-        2021\\CMSC435\\vlearn2\\Webapp\\branches\\api\\unity\\PipeTaskAssets\\Assets\\Editor\\LightTriggerTest.cs:18
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <fb001e01371b4adca20013e0ac763896>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][LightTriggerTest][suite]
-    - id: 1005
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PhysicsPlierHoldTest][suite]
-      name: PhysicsPlierHoldTest
-      fullName: PhysicsPlierHoldTest
-      resultStatus: 1
-      duration: 0.0121044
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1015
-      parentUniqueId: '[Assembly-CSharp-Editor][D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-    - id: 1006
-      uniqueId: Assembly-CSharp-Editor.dll/PhysicsPlierHoldTest/[Assembly-CSharp-Editor][PhysicsPlierHoldTest.PhysicsPlierHoldTest_Test]
-      name: PhysicsPlierHoldTest_Test
-      fullName: PhysicsPlierHoldTest.PhysicsPlierHoldTest_Test
-      resultStatus: 1
-      duration: 0.0007572
-      messages: 
-      output: '
-
-        IgnoreFailingMessages:true
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PhysicsPlierHoldTest][suite]
-    - id: 1007
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PlayerControllerTest][suite]
-      name: PlayerControllerTest
-      fullName: PlayerControllerTest
-      resultStatus: 1
-      duration: 0.010602
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1015
-      parentUniqueId: '[Assembly-CSharp-Editor][D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-    - id: 1008
-      uniqueId: Assembly-CSharp-Editor.dll/PlayerControllerTest/[Assembly-CSharp-Editor][PlayerControllerTest.PlayerStart_Test]
-      name: PlayerStart_Test
-      fullName: PlayerControllerTest.PlayerStart_Test
-      resultStatus: 1
-      duration: 0.0009948
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1007
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PlayerControllerTest][suite]
-    - id: 1009
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][SwitchFlipTest][suite]
-      name: SwitchFlipTest
-      fullName: SwitchFlipTest
-      resultStatus: 1
-      duration: 0.0139173
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1015
-      parentUniqueId: '[Assembly-CSharp-Editor][D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-    - id: 1010
-      uniqueId: Assembly-CSharp-Editor.dll/SwitchFlipTest/[Assembly-CSharp-Editor][SwitchFlipTest.SwitchFlipTest_Test]
-      name: SwitchFlipTest_Test
-      fullName: SwitchFlipTest.SwitchFlipTest_Test
-      resultStatus: 1
-      duration: 0.0021667
-      messages: 
-      output: '
-
-        IgnoreFailingMessages:true
-
-        NullReferenceException:
-        Object reference not set to an instance of an object
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][SwitchFlipTest][suite]
-    - id: 1011
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][TrashHoldTest][suite]
-      name: TrashHoldTest
-      fullName: TrashHoldTest
-      resultStatus: 1
-      duration: 0.011819
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1015
-      parentUniqueId: '[Assembly-CSharp-Editor][D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-    - id: 1012
-      uniqueId: Assembly-CSharp-Editor.dll/TrashHoldTest/[Assembly-CSharp-Editor][TrashHoldTest.TrashHoldTest_Test]
-      name: TrashHoldTest_Test
-      fullName: TrashHoldTest.TrashHoldTest_Test
-      resultStatus: 1
-      duration: 0.0008062
-      messages: 
-      output: '
-
-        IgnoreFailingMessages:true
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1011
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][TrashHoldTest][suite]
-    - id: 1013
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ValveTest][suite]
-      name: ValveTest
-      fullName: ValveTest
-      resultStatus: 1
-      duration: 0.013016
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1015
-      parentUniqueId: '[Assembly-CSharp-Editor][D:/Remy/Documents/Spring 2021/CMSC435/vlearn2/Webapp/branches/api/unity/PipeTaskAssets/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-    - id: 1014
-      uniqueId: Assembly-CSharp-Editor.dll/ValveTest/[Assembly-CSharp-Editor][ValveTest.TestValveTurn_Test]
-      name: TestValveTurn_Test
-      fullName: ValveTest.TestValveTurn_Test
-      resultStatus: 1
-      duration: 0.0014006
-      messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1013
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ValveTest][suite]
     m_ResultText: 'PipeTaskAssets (0.138s)
 
       ---
@@ -1121,7 +895,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 38b3fc59
       m_LastClickedID: 1509733176
-      m_ExpandedIDs: 806a9d974258a0a2d64552a51eb696c1390fa0f3e47838f6b7a1ca4138b3fc593d4ff763ffffff7f
+      m_ExpandedIDs: 806a9d974258a0a2d64552a51eb696c1390fa0f3e47838f6b40f01fdb7a1ca4138b3fc593d4ff763ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1175,7 +949,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 160
+    m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
