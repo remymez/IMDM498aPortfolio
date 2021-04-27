@@ -7,27 +7,29 @@ using UnityEngine.XR.ARFoundation;
 
 public class TankManagerScript : MonoBehaviour
 {
-    public TextMeshProUGUI title;
-    public TextMeshProUGUI info;
+    public Canvas infoPage;
+    public Text title;
+    public Text info;
     public Image image;
 
     public ARRaycastManager arRaycastManager;
     public LayerMask mask;
+
+    private bool active;
     private RaycastHit hit;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        active = false;
+        infoPage.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        /*
+#if UNITY_EDITOR
         if (Input.GetMouseButton(0))
         {
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, mask))
+            if (!active && Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, mask))
             {
                 if (hit.transform.gameObject.CompareTag("Fish"))
                 {
@@ -37,11 +39,15 @@ public class TankManagerScript : MonoBehaviour
                         title.text = fish.SpeciesName;
                         info.text = fish.Info;
                         image.sprite = fish.Pic;
+                        active = true;
+                        infoPage.gameObject.SetActive(true);
                     }
                 }
             }
-        }*/
+        }
+# endif
 
+# if UNITY_ANDROID
         if (Input.touchCount > 0)
         {
             var touch = Input.GetTouch(0);
@@ -49,7 +55,7 @@ public class TankManagerScript : MonoBehaviour
             {
                 if (Input.touchCount == 1)
                 {
-                    if (Physics.Raycast(Camera.main.ScreenPointToRay(touch.position), out hit, Mathf.Infinity, mask))
+                    if (!active && Physics.Raycast(Camera.main.ScreenPointToRay(touch.position), out hit, Mathf.Infinity, mask))
                     {
                         if (hit.transform.gameObject.CompareTag("Fish"))
                         {
@@ -59,11 +65,20 @@ public class TankManagerScript : MonoBehaviour
                                 title.text = fish.SpeciesName;
                                 info.text = fish.Info;
                                 image.sprite = fish.Pic;
+                                active = true;
+                                infoPage.gameObject.SetActive(true);
                             }
                         }
                     }
                 }
             }
         }
+# endif
+    }
+
+    public void hideInfoPage()
+    {
+        active = false;
+        infoPage.gameObject.SetActive(false);
     }
 }

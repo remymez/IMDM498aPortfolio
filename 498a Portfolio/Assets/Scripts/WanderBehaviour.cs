@@ -1,43 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class WanderBehaviour : MonoBehaviour
 {
-    public float walkSpeed = .5f;
+    private float walkSpeed = .1f;
+    public LayerMask mask;
     private Vector3 wayPoint;
     private float Range = 4;
-    private RaycastHit hit;
-    private bool inCoroutine;
     private bool isRotating;
     private Quaternion targetRotation;
     private float interpolationParameter;
 
-    private Animator anim;
+    public Animator anim;
 
-    void Start()
+    void Awake()
     {
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
+        Range *= .15f;
         anim.SetBool("swimming", true);
-        inCoroutine = false;
         isRotating = false;
         Wander();
     }
 
     void Update()
     {
+        //Debug.Log("is Rotating: " + isRotating);
         if (!isRotating)
         {
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right * -1), 1f) ||
-                Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), .2f) ||
-                Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right * -1), .2f)) {
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), .15f, mask) ||
+                Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right * -1), .03f, mask) ||
+                Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), .03f, mask)) {
+                //Debug.Log("in update raycasts");
                 Wander();
             }
             else
             {
-                transform.position += transform.TransformDirection(Vector3.right * -1) * walkSpeed * Time.deltaTime;
-                if ((wayPoint - transform.position).magnitude < .5)
+                transform.position += transform.TransformDirection(Vector3.forward) * walkSpeed * Time.deltaTime;
+                if ((wayPoint - transform.position).magnitude < .15)
                 {
+                    //Debug.Log("Magnitude");
                     Wander();
                 }
             } 
@@ -46,16 +50,19 @@ public class WanderBehaviour : MonoBehaviour
 
     void Wander()
     {
-        wayPoint = new Vector3(Random.Range(transform.position.x - Range, transform.position.x + Range), Random.Range(transform.position.y - .35f, transform.position.y + .35f), Random.Range(transform.position.z - Range, transform.position.z + Range));
+        wayPoint = new Vector3(Random.Range(transform.position.x - Range, transform.position.x + Range), Random.Range(transform.position.y - .0525f, transform.position.y + .0525f), Random.Range(transform.position.z - Range, transform.position.z + Range));
         targetRotation = Quaternion.LookRotation(wayPoint - transform.position);
-        if (Physics.Raycast(transform.position, transform.TransformDirection(wayPoint - transform.position), 1f))
+        /*
+        if (Physics.Raycast(transform.position, transform.TransformDirection(wayPoint - transform.position), 1f, ~mask))
         {
             Wander();
-        } 
+        }*/
+        StartCoroutine(DoRotation(targetRotation));
+        /*
         else
         {
             StartCoroutine(DoRotation(targetRotation));
-        }
+        }*/
     }
 
     IEnumerator DoRotation(Quaternion dir)

@@ -57,13 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LowPolyFishPack1\Scripts\FishSize.cs" />
+    <Compile Include="Assets\Scripts\SturgeonController.cs" />
     <Compile Include="Assets\Scripts\WanderBehaviour.cs" />
     <Compile Include="Assets\AlignedGames\Polygonal Foliage Asset Package\Scripts\Utility\FlyCameraBehaviour.cs" />
-    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\Scripts\Fish.cs" />
-    <Compile Include="Assets\Scripts\SturgeonController.cs" />
-    <Compile Include="Assets\Scripts\TankManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlaceTank.cs" />
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\Scripts\TankManagerScript.cs" />
+    <Compile Include="Assets\Scripts\MenuControl.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

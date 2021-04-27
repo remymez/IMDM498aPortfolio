@@ -44,6 +44,7 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
@@ -90,57 +91,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1474}
+    - Class: 114
       Script: {instanceID: 1476}
     - Class: 114
-      Script: {instanceID: 1478}
+      Script: {instanceID: 1510}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1528}
     - Class: 114
       Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 1624}
     - Class: 114
       Script: {instanceID: 1628}
     - Class: 114
-      Script: {instanceID: 1632}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1998}
     - Class: 114
-      Script: {instanceID: 2002}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2318}
+      Script: {instanceID: 2388}
     - Class: 114
-      Script: {instanceID: 2392}
+      Script: {instanceID: 2438}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2904}
     - Class: 114
-      Script: {instanceID: 2908}
+      Script: {instanceID: 2954}
     - Class: 114
       Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 2962}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 2978}
+      Script: {instanceID: 3296}
     - Class: 114
-      Script: {instanceID: 3300}
+      Script: {instanceID: 3342}
     - Class: 114
-      Script: {instanceID: 3346}
+      Script: {instanceID: 3558}
     - Class: 114
-      Script: {instanceID: 3562}
+      Script: {instanceID: 3666}
     - Class: 114
-      Script: {instanceID: 3670}
+      Script: {instanceID: 3694}
     - Class: 114
-      Script: {instanceID: 3698}
+      Script: {instanceID: 3948}
     - Class: 114
-      Script: {instanceID: 3952}
+      Script: {instanceID: 3954}
     - Class: 114
-      Script: {instanceID: 3958}
-    - Class: 114
-      Script: {instanceID: 4102}
+      Script: {instanceID: 4098}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -242,7 +243,7 @@ ScriptsOnlyBuild:
     className: SturgeonController
   - hash:
       serializedVersion: 2
-      Hash: de206539195c9cf98f693b03abe3cb79
+      Hash: 645a4e14c68b57409b7a881e7b38c2c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WanderBehaviour
@@ -506,7 +507,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 3aaa95f93f1bfbfe73fec22aef660a64
+      Hash: b94f4d80c974b235497ebff9837a1800
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaceTank
