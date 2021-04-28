@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public interface IFish
 {
+    string infoName
+    {
+        get;
+    }
+
     string SpeciesName
     {
         get;

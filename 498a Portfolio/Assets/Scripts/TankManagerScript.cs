@@ -7,10 +7,13 @@ using UnityEngine.XR.ARFoundation;
 
 public class TankManagerScript : MonoBehaviour
 {
-    public Canvas infoPage;
+    public Canvas[] infoDiagrams;
+    private Canvas currPage;
+    /*
     public Text title;
     public Text info;
     public Image image;
+    */
 
     public ARRaycastManager arRaycastManager;
     public LayerMask mask;
@@ -21,7 +24,7 @@ public class TankManagerScript : MonoBehaviour
     private void Awake()
     {
         active = false;
-        infoPage.gameObject.SetActive(false);
+        currPage = null;
     }
 
     void Update()
@@ -36,14 +39,26 @@ public class TankManagerScript : MonoBehaviour
                     IFish fish = hit.transform.gameObject.GetComponent<IFish>();
                     if (fish != null)
                     {
+                        /*
                         title.text = fish.SpeciesName;
                         info.text = fish.Info;
                         image.sprite = fish.Pic;
-                        active = true;
-                        infoPage.gameObject.SetActive(true);
+                        */
+                        Debug.Log(fish.SpeciesName);
+                        currPage = getDiagramByName(fish.infoName);
+                        if (currPage != null)
+                        {
+                            active = true;
+                            currPage.gameObject.SetActive(true);
+                        }
                     }
                 }
             }
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            hideInfoPage();
         }
 # endif
 
@@ -62,11 +77,17 @@ public class TankManagerScript : MonoBehaviour
                             IFish fish = hit.transform.gameObject.GetComponent<IFish>();
                             if (fish != null)
                             {
+                                /*
                                 title.text = fish.SpeciesName;
                                 info.text = fish.Info;
                                 image.sprite = fish.Pic;
-                                active = true;
-                                infoPage.gameObject.SetActive(true);
+                                */
+                                currPage = getDiagramByName(fish.infoName);
+                                if (currPage != null)
+                                {
+                                    active = true;
+                                    currPage.gameObject.SetActive(true);
+                                }
                             }
                         }
                     }
@@ -78,7 +99,24 @@ public class TankManagerScript : MonoBehaviour
 
     public void hideInfoPage()
     {
-        active = false;
-        infoPage.gameObject.SetActive(false);
+        if (currPage != null)
+        {
+            active = false;
+            currPage.gameObject.SetActive(false);
+            currPage = null;
+        }
+    }
+
+    private Canvas getDiagramByName(string infoDiagram)
+    {
+        foreach (Canvas canvas in infoDiagrams)
+        {
+            if (canvas.name.Equals(infoDiagram))
+            {
+                return canvas;
+            }
+        }
+
+        return null;
     }
 }
