@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MiniGame : MonoBehaviour
 {
@@ -18,17 +19,27 @@ public class MiniGame : MonoBehaviour
     public GameObject trash_item3;
     public GameObject trash_item4;
     private ArrayList items = new ArrayList();
+    private Quaternion rotator = Quaternion.Euler(new Vector3(90f, 0f, 0f));
 
-    private int collected;
+    public int collected;
+    public int mistakes;
     public float xPos;
     public float yPos;
     public float zPos;
 
+    public Animator anim;
+    private bool isGameOver;
+    private bool gameStarted;
+
+    public TextMeshProUGUI collectedText;
+    public TextMeshProUGUI mistakeText;
+
     public void start_minigame()
     {
-        
+        gameStarted = true;
         StartCoroutine(spawn_items());
-
+        collectedText.text = "Collected: 0";
+        mistakeText.text = "Mistakes: 0";
     }
     private GameObject temp;
     private int item_type;
@@ -36,17 +47,14 @@ public class MiniGame : MonoBehaviour
 
     IEnumerator spawn_items()
     {
-        while (collected < 31)
+        while (collected < 10 && !isGameOver)
         {
             xPos = Random.Range((float)-4, (float)2.5);
-            yPos = Random.Range((float) -6, (float) 6);
-            zPos = Random.Range((float)10, (float)12);
-            item_type = Random.Range(1, 8);
-            temp = Instantiate((GameObject) items[item_type], new Vector3(xPos, yPos, zPos), Quaternion.identity);
+            yPos = Random.Range((float) -1.5, (float) 6);
+            zPos = 12.5f; //Random.Range((float)10, (float)12);
+            item_type = Random.Range(0, 8);
+            temp = Instantiate((GameObject) items[item_type], new Vector3(xPos, yPos, zPos), Quaternion.identity * rotator);
             yield return new WaitForSeconds(2f);
-            Destroy(temp);
-            collected += 1;
-            yield return new WaitForSeconds(5f);
         }
     }
     void Start()
@@ -60,12 +68,26 @@ public class MiniGame : MonoBehaviour
         items.Add(trash_item3);
         items.Add(trash_item4);
         collected = 0;
-        
+        mistakes = 0;
+        isGameOver = false;
+        collectedText.text = "";
+        mistakeText.text = "";
+        gameStarted = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (mistakes >= 5)
+        {
+            anim.SetBool("isDead", true);
+            isGameOver = true;
+        }
+
+        if (gameStarted)
+        {
+            collectedText.text = "Collected: " + collected.ToString();
+            mistakeText.text = "Mistakes: " + mistakes.ToString();
+        }
     }
 }
