@@ -44,7 +44,6 @@ public class TankManagerScript : MonoBehaviour
                         info.text = fish.Info;
                         image.sprite = fish.Pic;
                         */
-                        Debug.Log(fish.SpeciesName);
                         currPage = getDiagramByName(fish.infoName);
                         if (currPage != null)
                         {

@@ -197,6 +197,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RaycastPrefab: {fileID: 0}
+--- !u!114 &1007810601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
+  m_PrefabInstance: {fileID: 1137714851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facd596bf603f864fb60b2ec19b9f1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1137714851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,6 +427,17 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 5239743852464164766, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
   m_PrefabInstance: {fileID: 5239743851643044952}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1518593885 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1862501877867954830, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+  m_PrefabInstance: {fileID: 5239743851643044952}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502686f405b3d1040b578effbdaeda14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1696102041
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +674,102 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 758163219388580093, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024495732148092299, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024495732148092299, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024495732148092299, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1007810601}
+    - target: {fileID: 2024495732148092299, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024495732148092299, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: hideInfoPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024495732148092299, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TankManagerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024495732148092299, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753216812906755123, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753216812906755123, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753216812906755123, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753216812906755123, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1518593885}
+    - target: {fileID: 2753216812906755123, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753216812906755123, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: moveDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753216812906755123, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InfographicMover, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753216812906755123, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100815391942093419, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100815391942093419, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100815391942093419, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100815391942093419, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1518593885}
+    - target: {fileID: 4100815391942093419, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100815391942093419, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: moveLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100815391942093419, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InfographicMover, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100815391942093419, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5239743852464164763, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
       propertyPath: m_Name
       value: SturgeonInfographic
@@ -743,6 +861,38 @@ PrefabInstance:
     - target: {fileID: 5239743852464164767, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434186058329928088, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434186058329928088, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434186058329928088, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434186058329928088, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1518593885}
+    - target: {fileID: 5434186058329928088, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434186058329928088, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: moveRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434186058329928088, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InfographicMover, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434186058329928088, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2c5d6fc09d5a52429c3663eee667b45, type: 3}
