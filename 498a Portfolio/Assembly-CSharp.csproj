@@ -60,18 +60,18 @@
     <Compile Include="Assets\Scripts\SturgeonController.cs" />
     <Compile Include="Assets\Scripts\WanderBehaviour.cs" />
     <Compile Include="Assets\AlignedGames\Polygonal Foliage Asset Package\Scripts\Utility\FlyCameraBehaviour.cs" />
+    <Compile Include="Assets\Scripts\TrashBin.cs" />
     <Compile Include="Assets\Scripts\Fish.cs" />
     <Compile Include="Assets\Scripts\MiniGame.cs" />
+    <Compile Include="Assets\Scripts\GiftBin.cs" />
     <Compile Include="Assets\Scripts\PlaceTank.cs" />
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\Scripts\Destory.cs" />
+    <Compile Include="Assets\Scripts\DragObject.cs" />
     <Compile Include="Assets\Scripts\TankManagerScript.cs" />
     <Compile Include="Assets\Scripts\GPSHandler.cs" />
     <Compile Include="Assets\Scripts\InfographicMover.cs" />
     <Compile Include="Assets\Scripts\MenuControl.cs" />
-    <Compile Include="Assets\Scripts\DragObject.cs" />
-    <Compile Include="Assets\Scripts\GiftBin.cs" />
-    <Compile Include="Assets\Scripts\TrashBin.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -735,6 +735,9 @@
     </Reference>
     <Reference Include="Unity.XR.ARFoundation">
       <HintPath>Library\ScriptAssemblies\Unity.XR.ARFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,6 @@ using UnityEngine;
 public class InfographicMover : MonoBehaviour
 {
     public GameObject content;
-    public float speed;
 
     private bool animating;
     private float interpolationParameter;
@@ -20,7 +19,7 @@ public class InfographicMover : MonoBehaviour
         if (content.transform.localPosition.y > 0 && !animating)
         {
             StartCoroutine(move(1));
-        } else if (content.transform.localPosition.y > -720 && content.transform.localPosition.x == 0 && !animating)
+        } else if (content.transform.localPosition.y > -1435 && content.transform.localPosition.x == 0 && !animating)
         {
             StartCoroutine(move(1));
         }
@@ -29,7 +28,7 @@ public class InfographicMover : MonoBehaviour
 
     public void moveDown()
     {
-        if (content.transform.localPosition.y < 720 && !animating)
+        if (content.transform.localPosition.y < 1435 && !animating)
         {
             StartCoroutine(move(0));
         }
@@ -37,7 +36,7 @@ public class InfographicMover : MonoBehaviour
 
     public void moveRight()
     {
-        if (content.transform.localPosition.x > -405 && content.transform.localPosition.y > -720 && !animating)
+        if (content.transform.localPosition.x > -800 && content.transform.localPosition.y > -1435 && !animating)
         {
             StartCoroutine(move(2));
         }
@@ -45,7 +44,7 @@ public class InfographicMover : MonoBehaviour
 
     public void moveLeft()
     {
-        if (content.transform.localPosition.x < 405 && content.transform.localPosition.y > -720 && !animating)
+        if (content.transform.localPosition.x < 800 && content.transform.localPosition.y > -1435 && !animating)
         {
             StartCoroutine(move(3));
         }
@@ -64,27 +63,27 @@ public class InfographicMover : MonoBehaviour
         switch (dir)
         {
             case 0:
-                newPos = content.transform.localPosition + new Vector3(0f, 720f, 0f);
+                newPos = content.transform.localPosition + new Vector3(0f, 1435f, 0f);
                 break;
             case 1:
-                newPos = content.transform.localPosition + new Vector3(0f, -720f, 0f);
+                newPos = content.transform.localPosition + new Vector3(0f, -1435f, 0f);
                 break;
             case 2:
-                newPos = content.transform.localPosition + new Vector3(-405f, 0f, 0f);
+                newPos = content.transform.localPosition + new Vector3(-800f, 0f, 0f);
                 break;
             case 3:
-                newPos = content.transform.localPosition + new Vector3(405f, 0f, 0f);
+                newPos = content.transform.localPosition + new Vector3(800f, 0f, 0f);
                 break;
             default:
                 break;
         }
 
-        Vector3 originalPosition = content.transform.localPosition;
+        Vector3 originallocalPosition = content.transform.localPosition;
         interpolationParameter = 0f;
         while (interpolationParameter < 1f)
         {
             interpolationParameter += Time.deltaTime / 1.5f;
-            content.transform.localPosition = Vector3.Lerp(originalPosition, newPos, interpolationParameter);
+            content.transform.localPosition = Vector3.Lerp(originallocalPosition, newPos, interpolationParameter);
             yield return null;
         }
         animating = false;

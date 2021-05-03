@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: f1f23f250c9725146b60b958ecf8f321
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6806068804529593616
+    second: Image from iOS_0
+  - first:
+      213: 5623370776170767072
+    second: Image from iOS_1
+  - first:
+      213: 6438787597926795758
+    second: Image from iOS_2
+  - first:
+      213: -1851847888898756621
+    second: Image from iOS_3
+  - first:
+      213: -6157707988923859436
+    second: Image from iOS_4
+  - first:
+      213: -7606457747371110906
+    second: Image from iOS_5
+  - first:
+      213: 4311202004750225824
+    second: Image from iOS_6
+  - first:
+      213: 8868046097662903464
+    second: Image from iOS_7
+  - first:
+      213: -801141407818970347
+    second: Image from iOS_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +68,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +140,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Image from iOS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2567
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d9ad28483047e50800000000000000
+      internalID: 6806068804529593616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from iOS_1
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2567
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2a8f15de93a0e40800000000000000
+      internalID: 5623370776170767072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from iOS_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2567
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee90e96c43b2b5950800000000000000
+      internalID: 6438787597926795758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from iOS_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1287
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffe124182aec46e0800000000000000
+      internalID: -1851847888898756621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from iOS_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1287
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ebb91853d6b8aa0800000000000000
+      internalID: -6157707988923859436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from iOS_5
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1287
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e4de0cafe607690800000000000000
+      internalID: -7606457747371110906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from iOS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1d610b16774db30800000000000000
+      internalID: 4311202004750225824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from iOS_7
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 7
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a48cfed0f0a11b70800000000000000
+      internalID: 8868046097662903464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from iOS_8
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 7
+        width: 720
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b081c5226c1e4f0800000000000000
+      internalID: -801141407818970347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

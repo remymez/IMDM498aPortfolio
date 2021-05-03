@@ -8,9 +8,7 @@ using UnityEngine.XR.ARFoundation;
 public class TankManagerScript : MonoBehaviour
 {
     public Canvas infoPage;
-    public Text title;
-    public Text info;
-    public Image image;
+    public Canvas backBtnCanvas;
 
     public ARRaycastManager arRaycastManager;
     public LayerMask mask;
@@ -18,10 +16,19 @@ public class TankManagerScript : MonoBehaviour
     private bool active;
     private RaycastHit hit;
 
+    public Sprite[] screens;
+    private GameObject content;
+    private Image contentImage;
+    private int currPage;
+
     private void Awake()
     {
         active = false;
         infoPage.gameObject.SetActive(false);
+        backBtnCanvas.gameObject.SetActive(true);
+        content = infoPage.transform.Find("Content").gameObject;
+        contentImage = content.GetComponent<Image>();
+        currPage = 0;
     }
 
     void Update()
@@ -36,11 +43,11 @@ public class TankManagerScript : MonoBehaviour
                     IFish fish = hit.transform.gameObject.GetComponent<IFish>();
                     if (fish != null)
                     {
-                        title.text = fish.SpeciesName;
-                        info.text = fish.Info;
-                        image.sprite = fish.Pic;
                         active = true;
                         infoPage.gameObject.SetActive(true);
+                        backBtnCanvas.gameObject.SetActive(false);
+                        currPage = 0;
+                        contentImage.sprite = screens[currPage];
                     }
                 }
             }
@@ -62,11 +69,11 @@ public class TankManagerScript : MonoBehaviour
                             IFish fish = hit.transform.gameObject.GetComponent<IFish>();
                             if (fish != null)
                             {
-                                title.text = fish.SpeciesName;
-                                info.text = fish.Info;
-                                image.sprite = fish.Pic;
                                 active = true;
                                 infoPage.gameObject.SetActive(true);
+                                backBtnCanvas.gameObject.SetActive(false);
+                                currPage = 0;
+                                contentImage.sprite = screens[currPage];
                             }
                         }
                     }
@@ -80,5 +87,24 @@ public class TankManagerScript : MonoBehaviour
     {
         active = false;
         infoPage.gameObject.SetActive(false);
+        backBtnCanvas.gameObject.SetActive(true);
+    }
+
+    public void nextPage()
+    {
+        if (currPage < screens.Length - 1)
+        {
+            currPage++;
+            contentImage.sprite = screens[currPage];
+        }
+    }
+
+    public void prevPage()
+    {
+        if (currPage > 0)
+        {
+            currPage--;
+            contentImage.sprite = screens[currPage];
+        }
     }
 }

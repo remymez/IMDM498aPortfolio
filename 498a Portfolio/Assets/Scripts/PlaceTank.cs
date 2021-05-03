@@ -56,7 +56,7 @@ public class PlaceTank : MonoBehaviour
 
     void Place(Vector3 pos)
     {
-        Quaternion placementRot = Quaternion.identity * Quaternion.Euler(0f, -180f, 0f);
+        Quaternion placementRot = Quaternion.identity * Quaternion.Euler(0f, -90f, 0f);
         GameObject addedTank = Instantiate(tank, pos, placementRot);
         addedTank.transform.localScale = Vector3.one * .15f;
         foreach (var plane in arPlaneManager.trackables)

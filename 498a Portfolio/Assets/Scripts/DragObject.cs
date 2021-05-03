@@ -11,7 +11,6 @@ public class DragObject : MonoBehaviour
 
     void Update()
     {
-        /*
 # if UNITY_ANDROID
         Vector3 v3;
 
@@ -49,7 +48,7 @@ public class DragObject : MonoBehaviour
         {
             dragging = false;
         }
-# endif*/
+# endif
 
 # if UNITY_EDITOR
         Vector3 vec;
