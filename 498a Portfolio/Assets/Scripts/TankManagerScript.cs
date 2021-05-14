@@ -16,6 +16,10 @@ public class TankManagerScript : MonoBehaviour
     private bool active;
     private RaycastHit hit;
 
+    public AudioSource speech;
+    public AudioClip[] dialogues;
+    private int currClip;
+
     public Sprite[] screens;
     private GameObject content;
     private Image contentImage;
@@ -29,6 +33,8 @@ public class TankManagerScript : MonoBehaviour
         content = infoPage.transform.Find("Content").gameObject;
         contentImage = content.GetComponent<Image>();
         currPage = 0;
+        currClip = -1;
+        speech.clip = dialogues[0];
     }
 
     void Update()
@@ -85,6 +91,9 @@ public class TankManagerScript : MonoBehaviour
 
     public void hideInfoPage()
     {
+        speech.Stop();
+        currClip = -1;
+        speech.clip = dialogues[0];
         active = false;
         infoPage.gameObject.SetActive(false);
         backBtnCanvas.gameObject.SetActive(true);
@@ -92,6 +101,14 @@ public class TankManagerScript : MonoBehaviour
 
     public void nextPage()
     {
+        speech.Stop();
+        if (currClip < dialogues.Length - 1)
+        {
+            currClip++;
+            speech.clip = dialogues[currClip];
+            speech.PlayOneShot(speech.clip);
+        }
+
         if (currPage < screens.Length - 1)
         {
             currPage++;
@@ -101,6 +118,14 @@ public class TankManagerScript : MonoBehaviour
 
     public void prevPage()
     {
+        speech.Stop();
+        if (currClip > 0)
+        {
+            currClip--;
+            speech.clip = dialogues[currClip];
+            speech.PlayOneShot(speech.clip);
+        }
+
         if (currPage > 0)
         {
             currPage--;
