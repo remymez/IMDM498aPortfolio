@@ -10,14 +10,18 @@ public class PlaceTank : MonoBehaviour
     public GameObject sturg;
     public ARRaycastManager arRaycastManager;
     public ARPlaneManager arPlaneManager;
+    public GameObject hintBackground;
+    public GameObject hintText;
     private List<ARRaycastHit> arRaycastHits;
     private bool spawned;
 
     // Start is called before the first frame update
     void Start()
     {
-       spawned = false;
-       arRaycastHits = new List<ARRaycastHit>();
+        hintBackground.SetActive(false);
+        hintText.SetActive(false);
+        spawned = false;
+        arRaycastHits = new List<ARRaycastHit>();
     }
 
     // Update is called once per frame
@@ -56,6 +60,8 @@ public class PlaceTank : MonoBehaviour
 
     void Place(Vector3 pos)
     {
+        hintBackground.SetActive(true);
+        hintText.SetActive(true);
         Quaternion placementRot = Quaternion.identity * Quaternion.Euler(0f, -90f, 0f);
         GameObject addedTank = Instantiate(tank, pos, placementRot);
         addedTank.transform.localScale = Vector3.one * .15f;
