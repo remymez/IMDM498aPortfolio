@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637555993181215048
-    m_Hash: 1707389666
+      ticks: 637565590801462745
+    m_Hash: 1733277161
   m_LockFileStatus:
     m_FilePath: D:/Remy/Documents/Spring 2021/IMDM498a/Portfolio/IMDM498aPortfolio/498a
       Portfolio/Packages/packages-lock.json
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637565551671120155
+      ticks: 637565591086207851
     m_Hash: 3103703628
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
