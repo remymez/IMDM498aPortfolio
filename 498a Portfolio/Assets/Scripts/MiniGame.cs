@@ -21,11 +21,16 @@ public class MiniGame : MonoBehaviour
     private ArrayList items = new ArrayList();
     private Quaternion rotator = Quaternion.Euler(new Vector3(90f, 0f, 0f));
 
+    private GPSHandler gps;
+
+    public bool testMode;
     public int collected;
     public int mistakes;
     public float xPos;
     public float yPos;
     public float zPos;
+
+    private AudioSource audio;
 
     public Animator anim;
     private bool isGameOver;
@@ -47,15 +52,32 @@ public class MiniGame : MonoBehaviour
 
     IEnumerator spawn_items()
     {
-        while (collected < 10 && !isGameOver)
+        yield return new WaitForSeconds(5f);
+        if (!testMode)
         {
-            xPos = Random.Range((float)-4, (float)2.5);
-            yPos = Random.Range((float) -1.5, (float) 6);
-            zPos = 12.5f; //Random.Range((float)10, (float)12);
-            item_type = Random.Range(0, 8);
-            temp = Instantiate((GameObject) items[item_type], new Vector3(xPos + transform.position.x, yPos + transform.position.y, zPos), Quaternion.identity * rotator);
-            temp.transform.SetParent(gameObject.transform);
-            yield return new WaitForSeconds(3.5f);
+            while (collected < 10 && !isGameOver)
+            {
+                xPos = Random.Range((float)-4, (float)2.5);
+                yPos = Random.Range((float)-1.5, (float)6);
+                zPos = 12.5f; //Random.Range((float)10, (float)12);
+                item_type = gps.UpdateLocation();
+                temp = Instantiate((GameObject)items[item_type], new Vector3(xPos + transform.position.x, yPos + transform.position.y, zPos), Quaternion.identity * rotator);
+                temp.transform.SetParent(gameObject.transform);
+                yield return new WaitForSeconds(3.5f);
+            }
+        }
+        else
+        {
+            while (collected < 10 && !isGameOver)
+            {
+                xPos = Random.Range((float)-4, (float)2.5);
+                yPos = Random.Range((float)-1.5, (float)6);
+                zPos = 12.5f; //Random.Range((float)10, (float)12);
+                item_type = Random.Range(0,8);
+                temp = Instantiate((GameObject)items[item_type], new Vector3(xPos + transform.position.x, yPos + transform.position.y, zPos), Quaternion.identity * rotator);
+                temp.transform.SetParent(gameObject.transform);
+                yield return new WaitForSeconds(3.5f);
+            }
         }
     }
     void Start()

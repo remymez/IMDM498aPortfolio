@@ -46,7 +46,6 @@ public class TrashBin : MonoBehaviour
 
         if (other.gameObject.name.Equals("BottleOfWater(Clone)"))
         {
-            gameScript.collected += 1;
             dragScript.dragging = false;
             dragScript.toDrag = null;
             Destroy(other.gameObject);
@@ -54,7 +53,6 @@ public class TrashBin : MonoBehaviour
 
         if (other.gameObject.name.Equals("Bottle2(Clone)"))
         {
-            gameScript.collected += 1;
             dragScript.dragging = false;
             dragScript.toDrag = null;
             Destroy(other.gameObject);
@@ -62,7 +60,6 @@ public class TrashBin : MonoBehaviour
 
         if (other.gameObject.name.Equals("Battery1(Clone)"))
         {
-            gameScript.collected += 1;
             dragScript.dragging = false;
             dragScript.toDrag = null;
             Destroy(other.gameObject);
@@ -70,7 +67,6 @@ public class TrashBin : MonoBehaviour
 
         if (other.gameObject.name.Equals("Var2_LOD0(Clone)"))
         {
-            gameScript.collected += 1;
             dragScript.dragging = false;
             dragScript.toDrag = null;
             Destroy(other.gameObject);

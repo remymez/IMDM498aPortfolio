@@ -454,9 +454,9 @@ RectTransform:
   m_Father: {fileID: 1326533575}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 110, y: 100}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986726877
@@ -662,9 +662,9 @@ RectTransform:
   m_Father: {fileID: 1326533575}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -60, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 160, y: 50}
   m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1127883624
@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -843,31 +843,31 @@ PrefabInstance:
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[0]
       value: 
-      objectReference: {fileID: 6308289627416972236, guid: 7742451b264c10d4da34710a67a16808, type: 3}
+      objectReference: {fileID: 5623370776170767072, guid: f1f23f250c9725146b60b958ecf8f321, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[1]
       value: 
-      objectReference: {fileID: -4886482146467447407, guid: 7742451b264c10d4da34710a67a16808, type: 3}
+      objectReference: {fileID: -1851847888898756621, guid: f1f23f250c9725146b60b958ecf8f321, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[2]
       value: 
-      objectReference: {fileID: 7940510626117268354, guid: 7742451b264c10d4da34710a67a16808, type: 3}
+      objectReference: {fileID: -6157707988923859436, guid: f1f23f250c9725146b60b958ecf8f321, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[3]
       value: 
-      objectReference: {fileID: -4027307147515158703, guid: 7742451b264c10d4da34710a67a16808, type: 3}
+      objectReference: {fileID: -7606457747371110906, guid: f1f23f250c9725146b60b958ecf8f321, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[4]
       value: 
-      objectReference: {fileID: -4771473328436460051, guid: 7742451b264c10d4da34710a67a16808, type: 3}
+      objectReference: {fileID: 4311202004750225824, guid: f1f23f250c9725146b60b958ecf8f321, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[5]
       value: 
-      objectReference: {fileID: 8899791011053742471, guid: 7742451b264c10d4da34710a67a16808, type: 3}
+      objectReference: {fileID: 8868046097662903464, guid: f1f23f250c9725146b60b958ecf8f321, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[6]
       value: 
-      objectReference: {fileID: 765862938972432733, guid: 7742451b264c10d4da34710a67a16808, type: 3}
+      objectReference: {fileID: -801141407818970347, guid: f1f23f250c9725146b60b958ecf8f321, type: 3}
     - target: {fileID: 8089263335138052102, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: m_Name
       value: TankManager
