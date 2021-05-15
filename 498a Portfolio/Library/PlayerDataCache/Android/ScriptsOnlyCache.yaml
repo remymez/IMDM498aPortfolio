@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - InfographicMover
     - LowPolyWater.LowPolyWater
     - MenuControl
+    - MenuPlayDialogue
     - MiniGame
     - PlaceTank
     - SturgeonController
@@ -43,14 +44,6 @@ ScriptsOnlyBuild:
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -105,23 +98,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1478}
+    - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
       Script: {instanceID: 1482}
     - Class: 114
-      Script: {instanceID: 1484}
+      Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 1518}
+      Script: {instanceID: 1534}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 1624}
+      Script: {instanceID: 1630}
     - Class: 114
-      Script: {instanceID: 1632}
-    - Class: 114
-      Script: {instanceID: 1636}
+      Script: {instanceID: 1634}
     - Class: 114
       Script: {instanceID: 2018}
     - Class: 114
@@ -214,19 +207,19 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1478}
+    - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
       Script: {instanceID: 1482}
     - Class: 114
-      Script: {instanceID: 1484}
+      Script: {instanceID: 1534}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 1624}
-    - Class: 114
-      Script: {instanceID: 1758}
+      Script: {instanceID: 1756}
     - Class: 114
       Script: {instanceID: 2018}
     - Class: 114
@@ -294,20 +287,26 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1478}
+    - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
       Script: {instanceID: 1482}
     - Class: 114
-      Script: {instanceID: 1484}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1756}
     - Class: 114
-      Script: {instanceID: 1758}
+      Script: {instanceID: 1786}
     - Class: 114
       Script: {instanceID: 2012}
     - Class: 114
@@ -469,6 +468,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuPlayDialogue
   - hash:
       serializedVersion: 2
       Hash: 5648183942e1c22d510c7a8406031fc8
@@ -699,7 +704,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: b94f4d80c974b235497ebff9837a1800
+      Hash: e08816a57365730f10b82488ca3607da
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaceTank
@@ -951,7 +956,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 16edf172381ef4d0ecc4f5f31de8e255
+      Hash: 6f3e6fc3a98a457977b07b23d212a217
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TankManagerScript
@@ -1116,4 +1121,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/ARFishTank.unity
   - Assets/Scenes/GPS.unity
-  playerPath: C:/Users/nurud/Desktop/chesapeek.apk
+  playerPath: C:/Users/Remy/Desktop/ChesaPeekApp.apk
