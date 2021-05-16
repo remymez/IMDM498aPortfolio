@@ -30,21 +30,33 @@ public class MiniGame : MonoBehaviour
     public float yPos;
     public float zPos;
 
-    private AudioSource audio;
+    public AudioSource speech;
+    public AudioClip[] dialogue;
+
+    public GameObject[] subtitles;
 
     public Animator anim;
     private bool isGameOver;
     private bool gameStarted;
-
+    private bool restarted;
     public TextMeshProUGUI collectedText;
     public TextMeshProUGUI mistakeText;
 
     public void start_minigame()
     {
-        gameStarted = true;
-        StartCoroutine(spawn_items());
-        collectedText.text = "Collected: 0";
-        mistakeText.text = "Mistakes: 0";
+        if (!restarted)
+        {
+            StartCoroutine(hook_removed());
+            gameStarted = true;
+            collectedText.text = "Collected: 0";
+            mistakeText.text = "Mistakes: 0";
+        } else
+        {
+            gameStarted = true;
+            StartCoroutine(spawn_items());
+            collectedText.text = "Collected: 0";
+            mistakeText.text = "Mistakes: 0";
+        }
     }
     private GameObject temp;
     private int item_type;
@@ -76,9 +88,118 @@ public class MiniGame : MonoBehaviour
                 item_type = Random.Range(0,8);
                 temp = Instantiate((GameObject)items[item_type], new Vector3(xPos + transform.position.x, yPos + transform.position.y, zPos), Quaternion.identity * rotator);
                 temp.transform.SetParent(gameObject.transform);
-                yield return new WaitForSeconds(3.5f);
+                yield return new WaitForSeconds(15f);
             }
         }
+
+        if(isGameOver && collected < 10)
+        {
+            StartCoroutine(play_lose());
+            restarted = true;
+
+        }
+
+    }
+
+    IEnumerator play_win()
+    {
+        speech.clip = dialogue[12];
+        subtitles[12].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[12].SetActive(false);
+
+
+        speech.clip = dialogue[13];
+        subtitles[13].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[13].SetActive(false);
+    }
+
+    IEnumerator play_lose()
+    {
+        speech.clip = dialogue[14];
+        subtitles[14].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[14].SetActive(false);
+    }
+
+    IEnumerator play_dialogue_testudo()
+    {
+        speech.clip = dialogue[0];
+        subtitles[0].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[0].SetActive(false);
+
+        speech.clip = dialogue[1];
+        subtitles[1].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[1].SetActive(false);
+
+        speech.clip = dialogue[2];
+        subtitles[2].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[2].SetActive(false);
+
+        speech.clip = dialogue[3];
+        subtitles[2].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[2].SetActive(false);
+
+
+    }
+
+    IEnumerator hook_removed()
+    {
+        speech.clip = dialogue[4];
+        subtitles[4].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[4].SetActive(false);
+
+        speech.clip = dialogue[5];
+        subtitles[5].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[5].SetActive(false);
+
+        speech.clip = dialogue[6];
+        subtitles[6].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[6].SetActive(false);
+
+        speech.clip = dialogue[7];
+        subtitles[7].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[7].SetActive(false);
+
+        speech.clip = dialogue[8];
+        subtitles[8].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[8].SetActive(false);
+
+        speech.clip = dialogue[9];
+        subtitles[9].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[9].SetActive(false);
+
+        speech.clip = dialogue[10];
+        subtitles[10].SetActive(true);
+        speech.PlayOneShot(speech.clip);
+        yield return new WaitForSeconds(speech.clip.length);
+        subtitles[10].SetActive(false);
+
+        StartCoroutine(spawn_items());
     }
     void Start()
     {
@@ -96,6 +217,8 @@ public class MiniGame : MonoBehaviour
         collectedText.text = "";
         mistakeText.text = "";
         gameStarted = false;
+        restarted = false;
+        StartCoroutine(play_dialogue_testudo());
     }
 
     // Update is called once per frame
