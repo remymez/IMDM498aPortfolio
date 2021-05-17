@@ -863,10 +863,10 @@ RectTransform:
   m_Father: {fileID: 1326533575}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 98, y: 100}
-  m_SizeDelta: {x: 100, y: 30}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986726877
 MonoBehaviour:
@@ -1260,31 +1260,31 @@ PrefabInstance:
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[0]
       value: 
-      objectReference: {fileID: 5704550627731379835, guid: 32f12c0201ebecd479a2b50e850c4a5b, type: 3}
+      objectReference: {fileID: -3645739783631555089, guid: ab3229e6ad8aaf542a58d5d9e26799cb, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[1]
       value: 
-      objectReference: {fileID: 7409665223152314800, guid: 32f12c0201ebecd479a2b50e850c4a5b, type: 3}
+      objectReference: {fileID: -8358832486332975649, guid: ab3229e6ad8aaf542a58d5d9e26799cb, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[2]
       value: 
-      objectReference: {fileID: 2193964072918151253, guid: 32f12c0201ebecd479a2b50e850c4a5b, type: 3}
+      objectReference: {fileID: -5945751404170490486, guid: ab3229e6ad8aaf542a58d5d9e26799cb, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[3]
       value: 
-      objectReference: {fileID: -7086937450540599290, guid: 32f12c0201ebecd479a2b50e850c4a5b, type: 3}
+      objectReference: {fileID: 1396408440675694256, guid: ab3229e6ad8aaf542a58d5d9e26799cb, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[4]
       value: 
-      objectReference: {fileID: 3274455649713830641, guid: 32f12c0201ebecd479a2b50e850c4a5b, type: 3}
+      objectReference: {fileID: 5595853965118250699, guid: ab3229e6ad8aaf542a58d5d9e26799cb, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[5]
       value: 
-      objectReference: {fileID: 2962034799370602833, guid: 32f12c0201ebecd479a2b50e850c4a5b, type: 3}
+      objectReference: {fileID: 416461205086897386, guid: ab3229e6ad8aaf542a58d5d9e26799cb, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: screens.Array.data[6]
       value: 
-      objectReference: {fileID: -1694591226051752298, guid: 32f12c0201ebecd479a2b50e850c4a5b, type: 3}
+      objectReference: {fileID: 2148874848107576786, guid: ab3229e6ad8aaf542a58d5d9e26799cb, type: 3}
     - target: {fileID: 4813981255442604604, guid: 7ebdb1a25201b7b43a45aca5f3e1c2f7, type: 3}
       propertyPath: dialogues.Array.data[0]
       value: 
@@ -2147,7 +2147,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back to Tank
+  m_Text: Back
 --- !u!222 &2090901868
 CanvasRenderer:
   m_ObjectHideFlags: 0
